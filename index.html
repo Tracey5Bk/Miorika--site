@@ -1,1 +1,215 @@
-<!DOCTYPE html><html><body><h1>سلام، این یک تست است!</h1></body></html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Miorika – a golden-haired cosmic queen NFT born from layered creation. Explore her story, roadmap, and Web3 NFT art journey." />
+  <meta name="keywords" content="Miorika, NFT character, NFT project, golden hair NFT, Web3 art, NFT roadmap, NFT girl character, cosmic queen NFT, Ethereum NFT" />
+  <meta name="author" content="Golden Art's" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Miorika – The Cosmic Queen NFT" />
+  <meta property="og:description" content="Discover the story and roadmap of Miorika, a golden-haired cosmic queen created through layered art. View her NFT journey and join Web3 creativity." />
+  <meta property="og:image" content="miorika-main.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glistening-jalebi-ae9d23.netlify.app/" />
+  <title>Miorika – The Cosmic Queen NFT</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0a0a0a;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #111;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: gold;
+      margin: 0;
+    }
+
+    header p {
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ffd700;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
+    .img-wrapper {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
+      background-color: #111;
+    }
+
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slider img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 1rem;
+      flex-shrink: 0;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .prev, .next {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Miorika – Born from Layers</h1>
+    <p>The story of a golden-haired cosmic queen</p>
+  </header>
+
+  <section>
+    <h2>🌟 Origin of Miorika</h2>
+    <p>
+      Miorika is not just an NFT character — she is a cosmic queen created through precise layer-by-layer design. Her identity shines with golden hair, futuristic beauty, and powerful presence. The idea was born in a simple sketch but evolved into a full Web3 avatar.
+    </p>
+    <div class="img-wrapper">
+      <img src="miorika-main.png" alt="Miorika Character" />
+    </div>
+  </section>
+
+  <section>
+    <h2>📸 Character Showcase</h2>
+    <div class="slider-container">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <div class="slider" id="slider">
+        <!-- JavaScript will insert 30 images here -->
+      </div>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>📜 Project Roadmap</h2>
+    <ul>
+      <li>✅ Phase 1: Character design and lore building</li>
+      <li>🔄 Phase 2: Multi-version generation with golden accessories</li>
+      <li>🧩 Phase 3: Minting the first edition on Ethereum</li>
+      <li>🚀 Phase 4: Community launch and roadmap reveal</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📈 Why Miorika Stands Out</h2>
+    <p>
+      Designed with SEO precision, Miorika is a unique NFT character project with its own dedicated website. Our mission is to make Miorika appear among the top search results for NFT character art and Web3 collectibles.
+    </p>
+  </section>
+
+  <section>
+    <h2>🔗 Social Media</h2>
+    <p>
+      Follow us on:
+      <br />
+      <a href="https://twitter.com/Miorika_art" target="_blank">Twitter – @Miorika_art</a>
+      <br />
+      <a href="#" target="_blank">Foundation – Coming Soon</a>
+      <br />
+      <a href="#" target="_blank">OpenSea – Coming Soon</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Golden Art's | All Rights Reserved | Miorika – The NFT Cosmic Queen
+  </footer>
+
+  <script>
+    const imageLinks = Array.from({ length: 30 }, (_, i) => `https://yourdomain.com/miorika${i + 1}.png`);
+    const slider = document.getElementById("slider");
+    let currentIndex = 0;
+
+    function renderSlides() {
+      slider.innerHTML = imageLinks.map(link => `<img src="${link}" alt="Miorika Slide" />`).join('');
+      updateSlide();
+    }
+
+    function updateSlide() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % imageLinks.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + imageLinks.length) % imageLinks.length;
+      updateSlide();
+    }
+
+    renderSlides();
+    setInterval(nextSlide, 4000);
+  </script>
+</body>
+</html>
