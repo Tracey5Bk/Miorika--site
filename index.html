@@ -2,169 +2,222 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Miorika of the future – Explore the story, NFTs, and digital world of Miorika. An original Web3 character and creative universe." />
-  <meta name="keywords" content="Miorika, NFT, Web3, Digital Art, Ethereum, NFT character, unique NFT, mint NFT, anime NFT, PFP NFT" />
+  <meta name="description" content="Enter the futuristic realm of Miorika – a next-generation NFT heroine born from digital layers. Discover her world, mint, and join the Web3 movement." />
+  <meta name="keywords" content="Miorika, NFT character, future girl, NFT project, Miorika of the Future, Web3 art, mint NFT, Ethereum collectibles" />
   <meta name="author" content="Golden Art's" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Miorika of the Future – NFT Project" />
-  <meta property="og:description" content="Dive into the digital universe of Miorika, an original NFT project with layered characters and a futuristic roadmap." />
+  <meta property="og:title" content="Miorika of the Future – Futuristic NFT Experience" />
+  <meta property="og:description" content="Explore the journey and digital artistry of Miorika, a futuristic NFT icon with powerful style and a story that pushes beyond Web3." />
   <meta property="og:image" content="miorika-main.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://miorika.art" />
-  <title>Miorika of the Future</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papFM7ZbN8yEBdjSb4QKp1F+6uZ7XzGk3Mcg2QKrEUs+rhX+QTXBlF1QlE8N6fWXJPvVaW5vfiZ2XDl51UJZOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta property="og:url" content="https://glistening-jalebi-ae9d23.netlify.app/" />
+  <title>Miorika of the Future – NFT Character Project</title>
   <style>
-    :root {
-      --bg-color: #0a0a0a;
-      --text-color: white;
-      --accent: gold;
-    }
-    body.light-mode {
-      --bg-color: #fdfdfd;
-      --text-color: #111;
-      --accent: #2222ff;
-    }
     body {
       margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background-color: #0a0a0a;
+      color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    header {
-      padding: 1.5rem;
-      text-align: center;
-      background-color: #111;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin: 0;
-    }
-    .toggle-mode {
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-      cursor: pointer;
-      font-size: 1.2rem;
-      background: none;
-      border: none;
-      color: var(--text-color);
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: var(--accent);
-    }
-    p, li {
-      line-height: 1.6;
-    }
-    .img-wrapper {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    .img-wrapper img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 1rem;
-    }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      padding: 1rem;
-    }
-    .slider img {
-      height: 280px;
-      border-radius: 12px;
-    }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      font-size: 1.4rem;
-      margin-top: 1rem;
-    }
-    .social-icons a {
-      color: var(--text-color);
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      background-color: #111;
-    }
+    }header {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #111;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffe7;
+  margin: 0;
+}
+
+header p {
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+nav {
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00ffe7;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #00ffe7;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+.img-wrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.img-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  background-color: #111;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
   </style>
 </head>
 <body>
-  <button class="toggle-mode" onclick="toggleMode()">🌙/☀️</button>
   <header>
     <h1>Miorika of the Future</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#social">Social</a>
-    </nav>
-  </header>  <section id="about">
-    <h2>About Miorika</h2>
+    <p>A new generation of digital identity begins</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#showcase">Characters</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#social">Social</a>
+  </nav>  <section id="about">
+    <h2>💫 About Miorika</h2>
     <p>
-      Miorika is a digital being, born from the imagination of artists shaping the future of identity. She isn’t just a PFP — she’s a universe. With unique style, layered design, and story-driven character, Miorika leads a new generation of digital collectibles. Discover the vision behind her evolution.
+      In a world driven by code and creativity, Miorika rises as a futuristic symbol of digital elegance. Born not of royalty, but of resilience and radiant design, she bridges the future of Web3 art with the soul of individuality. Every pixel of her being was crafted through visionary layers – and every gaze reveals more than beauty: it unveils purpose.
     </p>
-  </section>  <section id="gallery">
-    <h2>Character Gallery</h2>
-    <div class="slider">
-      <img src="miorika1.png" alt="Miorika 1" />
-      <img src="miorika2.png" alt="Miorika 2" />
-      <img src="miorika3.png" alt="Miorika 3" />
-      <img src="miorika4.png" alt="Miorika 4" />
-      <img src="miorika5.png" alt="Miorika 5" />
-      <!-- Add up to 30 slides here -->
+    <p>
+      Miorika is more than an NFT – she is a revolution in stylized identity, a collectible that speaks to both collectors and dreamers. The future belongs to her and those who recognize her power.
+    </p>
+    <div class="img-wrapper">
+      <img src="miorika-main.png" alt="Miorika Character" />
+    </div>
+  </section>  <section id="showcase">
+    <h2>📸 Character Showcase</h2>
+    <div class="slider-container">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <div class="slider" id="slider">
+        <!-- JavaScript will insert 30 images here -->
+      </div>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
   </section>  <section id="roadmap">
-    <h2>Project Roadmap</h2>
+    <h2>🗺️ Project Roadmap</h2>
     <ul>
-      <li>✅ Character design & world building</li>
-      <li>🎨 Art layering & multiple variants</li>
-      <li>🪙 Ethereum minting on Foundation</li>
-      <li>👥 Community reveal & DAO utility</li>
+      <li>🔹 Phase 1: Character development, trait layers, and initial lore</li>
+      <li>🔹 Phase 2: Community reveal & whitelist events</li>
+      <li>🔹 Phase 3: Mint on Ethereum and Base networks</li>
+      <li>🔹 Phase 4: Collaborations, metaverse integration & animated shorts</li>
     </ul>
   </section>  <section id="social">
-    <h2>Follow Us</h2>
+    <h2>🔗 Connect With Us</h2>
     <div class="social-icons">
-      <a href="https://twitter.com/Miorika_art" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i> (soon)</a>
-      <a href="#"><i class="fab fa-discord"></i> (soon)</a>
+      <a href="https://twitter.com/Miorika_art" target="_blank"><img src="x-icon.png" alt="Twitter X" /></a>
+      <a href="#"><img src="discord-icon.png" alt="Discord" title="Coming soon" /></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram" title="Coming soon" /></a>
     </div>
   </section>  <footer>
     &copy; 2025 Golden Art's | All Rights Reserved | Miorika of the Future
   </footer>  <script>
-    function toggleMode() {
-      document.body.classList.toggle('light-mode');
-      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    const imageLinks = Array.from({ length: 30 }, (_, i) => `https://yourdomain.com/miorika${i + 1}.png`);
+    const slider = document.getElementById("slider");
+    let currentIndex = 0;
+
+    function renderSlides() {
+      slider.innerHTML = imageLinks.map(link => `<img src="${link}" alt="Miorika Slide" />`).join('');
+      updateSlide();
     }
-    // Load saved mode
-    window.onload = () => {
-      const theme = localStorage.getItem('theme');
-      if (theme === 'light') {
-        document.body.classList.add('light-mode');
-      }
-    };
+
+    function updateSlide() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % imageLinks.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + imageLinks.length) % imageLinks.length;
+      updateSlide();
+    }
+
+    renderSlides();
+    setInterval(nextSlide, 4000);
   </script></body>
     </html>
