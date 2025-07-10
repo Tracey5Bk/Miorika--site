@@ -18,7 +18,33 @@
       background-color: #0a0a0a;
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }header {
+    }#intro {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease-out 3s forwards;
+}
+
+#intro img {
+  width: 200px;
+  animation: wink 2s ease-in-out infinite;
+}
+
+@keyframes wink {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.2); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+header {
   padding: 1.5rem;
   text-align: center;
   background-color: #111;
@@ -79,14 +105,6 @@ p, li {
   border-radius: 1rem;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #aaa;
-  font-size: 0.9rem;
-  background-color: #111;
-}
-
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -135,6 +153,14 @@ footer {
   height: 32px;
 }
 
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  background-color: #111;
+}
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.8rem;
@@ -148,7 +174,9 @@ footer {
   </style>
 </head>
 <body>
-  <header>
+  <div id="intro">
+    <img src="miorika-wink.png" alt="Miorika Wink Animation" />
+  </div>  <header>
     <h1>Miorika of the Future</h1>
     <p>A new generation of digital identity begins</p>
   </header>  <nav>
@@ -157,9 +185,9 @@ footer {
     <a href="#roadmap">Roadmap</a>
     <a href="#social">Social</a>
   </nav>  <section id="about">
-    <h2>💫 About Miorika</h2>
+    <h2>🌛 About Miorika</h2>
     <p>
-      In a world driven by code and creativity, Miorika rises as a futuristic symbol of digital elegance. Born not of royalty, but of resilience and radiant design, she bridges the future of Web3 art with the soul of individuality. Every pixel of her being was crafted through visionary layers – and every gaze reveals more than beauty: it unveils purpose.
+      In a world driven by code and creativity, Miorika rises as a futuristic symbol of digital elegance. Born not of royalty, but of resilience and radiant design, she bridges the future of Web3 art with the soul of individuality.
     </p>
     <p>
       Miorika is more than an NFT – she is a revolution in stylized identity, a collectible that speaks to both collectors and dreamers. The future belongs to her and those who recognize her power.
@@ -170,54 +198,4 @@ footer {
   </section>  <section id="showcase">
     <h2>📸 Character Showcase</h2>
     <div class="slider-container">
-      <button class="prev" onclick="prevSlide()">&#10094;</button>
-      <div class="slider" id="slider">
-        <!-- JavaScript will insert 30 images here -->
-      </div>
-      <button class="next" onclick="nextSlide()">&#10095;</button>
-    </div>
-  </section>  <section id="roadmap">
-    <h2>🗺️ Project Roadmap</h2>
-    <ul>
-      <li>🔹 Phase 1: Character development, trait layers, and initial lore</li>
-      <li>🔹 Phase 2: Community reveal & whitelist events</li>
-      <li>🔹 Phase 3: Mint on Ethereum and Base networks</li>
-      <li>🔹 Phase 4: Collaborations, metaverse integration & animated shorts</li>
-    </ul>
-  </section>  <section id="social">
-    <h2>🔗 Connect With Us</h2>
-    <div class="social-icons">
-      <a href="https://twitter.com/Miorika_art" target="_blank"><img src="x-icon.png" alt="Twitter X" /></a>
-      <a href="#"><img src="discord-icon.png" alt="Discord" title="Coming soon" /></a>
-      <a href="#"><img src="instagram-icon.png" alt="Instagram" title="Coming soon" /></a>
-    </div>
-  </section>  <footer>
-    &copy; 2025 Golden Art's | All Rights Reserved | Miorika of the Future
-  </footer>  <script>
-    const imageLinks = Array.from({ length: 30 }, (_, i) => `https://yourdomain.com/miorika${i + 1}.png`);
-    const slider = document.getElementById("slider");
-    let currentIndex = 0;
-
-    function renderSlides() {
-      slider.innerHTML = imageLinks.map(link => `<img src="${link}" alt="Miorika Slide" />`).join('');
-      updateSlide();
-    }
-
-    function updateSlide() {
-      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % imageLinks.length;
-      updateSlide();
-    }
-
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + imageLinks.length) % imageLinks.length;
-      updateSlide();
-    }
-
-    renderSlides();
-    setInterval(nextSlide, 4000);
-  </script></body>
-    </html>
+      <button class="prev" onclick="prevSlide()">
