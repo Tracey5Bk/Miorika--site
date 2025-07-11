@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,184 +19,268 @@
       background-color: #0a0a0a;
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }#intro {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  animation: fadeOut 1s ease-out 3s forwards;
-}
+    }
 
-#intro img {
-  width: 200px;
-  animation: wink 2s ease-in-out infinite;
-}
+    header {
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #111;
+    }
 
-@keyframes wink {
-  0%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(0.2); }
-}
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffe7;
+      margin: 0;
+    }
 
-@keyframes fadeOut {
-  to { opacity: 0; visibility: hidden; }
-}
+    header p {
+      color: #aaa;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
 
-header {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #111;
-}
+    nav {
+      background: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #00ffe7;
-  margin: 0;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-header p {
-  color: #aaa;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
+    nav a:hover {
+      color: #00ffe7;
+    }
 
-nav {
-  background: #0f0f0f;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-}
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+    h2 {
+      color: #00ffe7;
+    }
 
-nav a:hover {
-  color: #00ffe7;
-}
+    p, li {
+      line-height: 1.6;
+    }
 
-section {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
-}
+    .img-wrapper {
+      text-align: center;
+      margin-top: 1rem;
+    }
 
-h2 {
-  color: #00ffe7;
-}
+    .img-wrapper img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 1rem;
+    }
 
-p, li {
-  line-height: 1.6;
-}
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
+      background-color: #111;
+    }
 
-.img-wrapper {
-  text-align: center;
-  margin-top: 1rem;
-}
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
 
-.img-wrapper img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 1rem;
-}
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
 
-.slider-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 800px;
-  margin: 2rem auto;
-}
+    .slider img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 1rem;
+      flex-shrink: 0;
+    }
 
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-}
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 10;
+    }
 
-.slider img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 1rem;
-  flex-shrink: 0;
-}
+    .prev { left: 0; }
+    .next { right: 0; }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 10;
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
 
-.prev { left: 0; }
-.next { right: 0; }
+    .social-icons a img {
+      width: 32px;
+      height: 32px;
+    }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .prev, .next {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.7rem;
+      }
+    }
 
-.social-icons a img {
-  width: 32px;
-  height: 32px;
-}
+    .character-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
 
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #aaa;
-  font-size: 0.9rem;
-  background-color: #111;
-}
+    .character {
+      position: relative;
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+      max-width: 250px;
+    }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-  .prev, .next {
-    font-size: 1.5rem;
-    padding: 0.3rem 0.7rem;
-  }
-}
+    .character img {
+      width: 100%;
+      border-radius: 1rem;
+    }
 
+    .eye {
+      position: absolute;
+      top: 35%;
+      left: 43%;
+      width: 14%;
+      height: 14%;
+      background-color: black;
+      border-radius: 50%;
+      opacity: 1;
+      animation: blink 4s infinite;
+    }
+
+    @keyframes blink {
+      0%, 90%, 100% { opacity: 1; }
+      92%, 96% { opacity: 0; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
   </style>
 </head>
 <body>
-  <div id="intro">
-    <img src="miorika-wink.png" alt="Miorika Wink Animation" />
-  </div>  <header>
+  <div class="character-container">
+    <div class="character">
+      <img src="A_simple_2D_digital_animation_of_a_character_welco.png" alt="Miorika Animated" />
+      <div class="eye"></div>
+    </div>
+  </div>
+
+  <header>
     <h1>Miorika of the Future</h1>
     <p>A new generation of digital identity begins</p>
-  </header>  <nav>
+  </header>
+
+  <nav>
     <a href="#about">About</a>
     <a href="#showcase">Characters</a>
     <a href="#roadmap">Roadmap</a>
     <a href="#social">Social</a>
-  </nav>  <section id="about">
-    <h2>🌛 About Miorika</h2>
+  </nav>
+
+  <section id="about">
+    <h2>About Miorika</h2>
     <p>
       In a world driven by code and creativity, Miorika rises as a futuristic symbol of digital elegance. Born not of royalty, but of resilience and radiant design, she bridges the future of Web3 art with the soul of individuality.
     </p>
     <p>
-      Miorika is more than an NFT – she is a revolution in stylized identity, a collectible that speaks to both collectors and dreamers. The future belongs to her and those who recognize her power.
+      Miorika is more than an NFT – she is a revolution in stylized identity, a collectible that speaks to both collectors and dreamers.
     </p>
     <div class="img-wrapper">
       <img src="miorika-main.png" alt="Miorika Character" />
     </div>
-  </section>  <section id="showcase">
-    <h2>📸 Character Showcase</h2>
+  </section>
+
+  <section id="showcase">
+    <h2>Character Showcase</h2>
     <div class="slider-container">
-      <button class="prev" onclick="prevSlide()">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <div class="slider" id="slider">
+        <!-- JavaScript will insert 30 images here -->
+      </div>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>Project Roadmap</h2>
+    <ul>
+      <li>Phase 1: Character development, trait layers, and initial lore</li>
+      <li>Phase 2: Community reveal & whitelist events</li>
+      <li>Phase 3: Mint on Ethereum and Base networks</li>
+      <li>Phase 4: Collaborations, metaverse integration & animated shorts</li>
+    </ul>
+  </section>
+
+  <section id="social">
+    <h2>Connect With Us</h2>
+    <div class="social-icons">
+      <a href="https://twitter.com/Miorika_art" target="_blank"><img src="x-icon.png" alt="Twitter X" /></a>
+      <a href="#"><img src="discord-icon.png" alt="Discord" title="Coming soon" /></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram" title="Coming soon" /></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Golden Art's | All Rights Reserved | Miorika of the Future
+  </footer>
+
+  <script>
+    const imageLinks = Array.from({ length: 30 }, (_, i) => `https://yourdomain.com/miorika${i + 1}.png`);
+    const slider = document.getElementById("slider");
+    let currentIndex = 0;
+
+    function renderSlides() {
+      slider.innerHTML = imageLinks.map(link => `<img src="${link}" alt="Miorika Slide" />`).join('');
+      updateSlide();
+    }
+
+    function updateSlide() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % imageLinks.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + imageLinks.length) % imageLinks.length;
+      updateSlide();
+    }
+
+    renderSlides();
+    setInterval(nextSlide, 4000);
+  </script>
+</body>
+                                                        </html>
